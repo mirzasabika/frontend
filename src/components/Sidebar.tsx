@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
-import { Thermometer, FileJson, Save, Upload, Type } from "lucide-react";
+import { Thermometer, Type } from "lucide-react";
 import { FaDownload, FaCopy } from "react-icons/fa";
 
 interface SidebarProps {
