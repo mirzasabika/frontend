@@ -1,69 +1,56 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Interface Prototype
+1. Research
+2.  Platforms Reviewed
+   
+--> I reviewed the following AI UIs:
 
-Currently, two official plugins are available:
+OpenAI Playground
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clean UI with advanced prompt options and model selection.
 
-## Expanding the ESLint configuration
+Clear parameter controls like temperature and max tokens.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Hugging Face Spaces
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Easy deployment of models with community interaction.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Simple interface; emphasizes model usage rather than UI design.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Anthropic Claude UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Focus on safe interactions.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Emphasis on conversational history and model transparency.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Microsoft Copilot Lab
+
+Integrated prompt engineering and examples.
+
+Smooth prompt/template switching.
+
+--> Chosen Features (4–6)
+From the reviewed platforms, I chose to implement the following core features:
+
+Model Selector (GPT-3.5, GPT-4, Custom)
+
+Prompt Editor with template save/load
+
+Parameters Panel (temperature, max tokens)
+
+
+--> Submission Checklist
+
+ GitHub Repo (with source code, README.md, /api, .storybook, assets)
+
+ Figma file link with mockups
+ <img width="1080" height="513" alt="Screenshot 2025-08-12 134410" src="https://github.com/user-attachments/assets/0a108547-4e99-46b7-97ae-70c870b38aed" />
+
+Chat/Output Area with copy/download
+
+Theme Toggle (Light/Dark)
+
+Responsive layout support
+
+
