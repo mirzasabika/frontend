@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small customizations */
+html, body, #root {
+  height: 100%;
+}
+
+/* nice scrollbar for the chat area */
+::-webkit-scrollbar { height: 10px; width: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* slider accent for browsers that support accent-color */
+input[type="range"] { accent-color: theme('colors.accent', '#08a0ff'); }
+
+/* subtle glass card backdrop */
+.card-glass {
+  background: rgba(6, 18, 29, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* floating send button shadow */
+.send-glow {
+  box-shadow: 0 8px 30px rgba(8,160,255,0.14);
+}
